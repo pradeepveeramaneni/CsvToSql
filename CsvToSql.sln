@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4BF809B5-B80B-4C5E-AC54-D2C21E495C94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ingest.Api", "Ingest.Api\Ingest.Api.csproj", "{3541211C-91DA-44E1-A64F-C6F4AF76FB97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ingest.Api", "Ingest.Api\Ingest.Api.csproj", "{3541211C-91DA-44E1-A64F-C6F4AF76FB97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +32,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D62559A7-6980-4D67-BC61-93A1E4870767} = {4BF809B5-B80B-4C5E-AC54-D2C21E495C94}
 		{4BF809B5-B80B-4C5E-AC54-D2C21E495C94} = {1C29AFCE-DCB1-4FCE-AAB5-C73C8993AF87}
+		{3541211C-91DA-44E1-A64F-C6F4AF76FB97} = {1C29AFCE-DCB1-4FCE-AAB5-C73C8993AF87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B6108A7-EF52-4964-A0DF-7C350996D7B0}
