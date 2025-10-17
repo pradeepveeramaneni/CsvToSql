@@ -58,7 +58,7 @@ namespace Common.Messaging
         public void Dispose() =>_producer.Flush(TimeSpan.FromSeconds(5));
     }
 
-    public sealed class KafkaConsumer<T>
+    public sealed class KafkaConsumer<T>:IDisposable
     {
         private readonly IConsumer<string, string> _consumer;
 
@@ -91,6 +91,7 @@ namespace Common.Messaging
         public void Commit(ConsumeResult<string,string> cr)=> _consumer.Commit(cr);
 
         public void close() => _consumer.Close();
+        public void Dispose() => _consumer.Dispose();
     }
 
 
