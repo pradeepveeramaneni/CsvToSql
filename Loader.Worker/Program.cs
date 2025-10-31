@@ -1,4 +1,4 @@
-namespace Loader.Sql
+namespace Loader.Worker
 {
     public class Program
     {
