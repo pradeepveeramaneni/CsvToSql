@@ -12,6 +12,7 @@ namespace Transformer.Worker
             var builder = Host.CreateApplicationBuilder(args);
 
             Logging.ConfigureSerilog(builder);
+            builder.Services.Configure<TransformerSettings>(builder.Configuration.GetSection("Transformer"));
             builder.Services.AddSingleton<TransformerService>();
             builder.Services.AddSingleton<IValidator<RawRowEvent>, RawRowValidator>();
             builder.Services.AddHostedService<Worker>();
