@@ -124,7 +124,7 @@ dotnet run --project src/Transformer.Worker
 dotnet run --project src/Loader.Worker
 
 5️⃣ Upload CSV
-curl -F "file=@sales.csv" http://localhost:5000/api/ingest/upload
+curl -F "file=@sales.csv" http://localhost:5117/swagger/index.html => http://localhost:5117/api/ingest/upload
 
 ✅ Use Cases
 
